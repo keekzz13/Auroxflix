@@ -1,14 +1,18 @@
+# app.py
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import cloudscraper
-import re
+import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["https://auroxflix.netlify.app", "http://localhost:5174", "https://quickwatch.co", "http://192.168.1.8:5173"]}})
+CORS(app, resources={r"/*": {"origins": [
+    "https://auroxflix.netlify.app"
+]}})
 
+# Regular requests session with retry strategy
 session = requests.Session()
 retry_strategy = Retry(
     total=3,
@@ -29,40 +33,36 @@ def proxy():
         headers = data.get('headers', {})
         use_cloudscraper = data.get('cf', False)
         
-        if not url: return jsonify({'error': 'URL is required'})
-        if method not in ['GET', 'POST']: return jsonify({'error': 'Only GET and POST methods are allowed'})
+        if not url:
+            return jsonify({'error': 'URL is required'}), 400
+        if method not in ['GET', 'POST']:
+            return jsonify({'error': 'Only GET and POST methods are allowed'}), 400
 
-        # Set default timeout
         timeout = data.get('timeout', 30)
-        
+
         # Choose session based on cf parameter
         if use_cloudscraper:
             scraper = cloudscraper.CloudScraper()
-            if method == 'GET': 
+            if method == 'GET':
                 response = scraper.get(url, headers=headers, timeout=timeout, stream=True)
-                response.raise_for_status()
-                return response.content
-            else: 
+            else:
                 form_data = data.get('form_data', {})
-                response = scraper.post(url, data=form_data, headers=headers, timeout=timeout, stream=True)
-                response.raise_for_status()
-                return response.content
+                response = scraper.post(url, headers=headers, data=form_data, timeout=timeout, stream=True)
         else:
-            # Use regular session for connection pooling
-            if method == 'GET': 
+            if method == 'GET':
                 response = session.get(url, headers=headers, timeout=timeout, stream=True)
-                response.raise_for_status()
-                return response.content
-            else: 
+            else:
                 form_data = data.get('form_data', {})
-                response = session.post(url, data=form_data, headers=headers, timeout=timeout, stream=True)
-                response.raise_for_status()
-                return response.content
-            
+                response = session.post(url, headers=headers, data=form_data, timeout=timeout, stream=True)
+
+        response.raise_for_status()
+        return Response(response.content, status=response.status_code, headers=dict(response.headers))
+
     except Exception as e:
         print(f"Error: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
 
 if __name__ == '__main__':
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-    app.run(debug=False, port=5001, host='0.0.0.0', threaded=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port, threaded=True)
