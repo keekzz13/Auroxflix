@@ -1,0 +1,515 @@
+/* Skeleton Animation Keyframes */
+@keyframes skeleton-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes skeleton-wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes skeleton-fade {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* New Animation Keyframes for Content Loading */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Modal Animation Keyframes */
+@keyframes modal-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes modal-scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.5) translateY(10px);
+  }
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Base Skeleton Classes */
+.skeleton-base {
+  background-color: #404040;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-pulse {
+  animation: skeleton-pulse 2s ease-in-out infinite;
+}
+
+.skeleton-wave {
+  background: linear-gradient(90deg, #404040 25%, #525252 50%, #404040 75%);
+  background-size: 200px 100%;
+  animation: skeleton-shimmer 2s infinite;
+}
+
+.skeleton-fade {
+  animation: skeleton-fade 1.5s ease-in-out infinite;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #2a2a2a 25%, #404040 50%, #2a2a2a 75%);
+  background-size: 200px 100%;
+  animation: skeleton-shimmer 2s infinite;
+}
+
+.skeleton-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: skeleton-wave 2s infinite;
+}
+
+/* Fast skeleton animations for many episodes */
+.skeleton-shimmer-fast {
+  background: linear-gradient(90deg, #2a2a2a 25%, #404040 50%, #2a2a2a 75%);
+  background-size: 200px 100%;
+  animation: skeleton-shimmer 0.8s infinite;
+}
+
+.skeleton-shimmer-fast::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: skeleton-wave 0.8s infinite;
+}
+
+.skeleton-shimmer-medium {
+  background: linear-gradient(90deg, #2a2a2a 25%, #404040 50%, #2a2a2a 75%);
+  background-size: 200px 100%;
+  animation: skeleton-shimmer 1.2s infinite;
+}
+
+.skeleton-shimmer-medium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: skeleton-wave 1.2s infinite;
+}
+
+.skeleton-shimmer-slow {
+  background: linear-gradient(90deg, #2a2a2a 25%, #404040 50%, #2a2a2a 75%);
+  background-size: 200px 100%;
+  animation: skeleton-shimmer 1.6s infinite;
+}
+
+.skeleton-shimmer-slow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: skeleton-wave 1.6s infinite;
+}
+
+/* Content Animation Classes */
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in 0.8s ease-out 0.2s both;
+}
+
+.animate-fade-in-delayed-2 {
+  animation: fade-in 0.8s ease-out 0.4s both;
+}
+
+.animate-fade-in-delayed-3 {
+  animation: fade-in 0.8s ease-out 0.6s both;
+}
+
+.animate-fade-in-delayed-4 {
+  animation: fade-in 0.8s ease-out 0.8s both;
+}
+
+.animate-fade-in-delayed-5 {
+  animation: fade-in 0.8s ease-out 1s both;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out;
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.8s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out;
+}
+
+.animate-stagger {
+  animation: slide-up 0.6s ease-out both;
+}
+
+/* Modal Animation Classes */
+.animate-modal-scale-in {
+  animation: modal-scale-in 0.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-modal-scale-out {
+  animation: modal-scale-out 0.2s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+.animate-modal-fade-in {
+  animation: modal-fade-in 0.1s ease-out forwards;
+}
+
+.animate-modal-fade-out {
+  animation: modal-fade-out 0.2s ease-in forwards;
+}
+
+/* Skeleton Size Variants */
+.skeleton-xs {
+  height: 12px;
+}
+
+.skeleton-sm {
+  height: 16px;
+}
+
+.skeleton-md {
+  height: 20px;
+}
+
+.skeleton-lg {
+  height: 24px;
+}
+
+.skeleton-xl {
+  height: 32px;
+}
+
+.skeleton-2xl {
+  height: 48px;
+}
+
+.skeleton-3xl {
+  height: 64px;
+}
+
+/* Skeleton Shape Variants */
+.skeleton-rounded {
+  border-radius: 8px;
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.skeleton-pill {
+  border-radius: 9999px;
+}
+
+/* Skeleton Width Variants */
+.skeleton-w-1\/4 {
+  width: 25%;
+}
+
+.skeleton-w-1\/2 {
+  width: 50%;
+}
+
+.skeleton-w-3\/4 {
+  width: 75%;
+}
+
+.skeleton-w-full {
+  width: 100%;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Skeleton Container */
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Responsive Skeleton */
+@media (max-width: 768px) {
+  .skeleton-responsive {
+    height: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .skeleton-responsive {
+    height: 20px;
+  }
+}
+
+/* Hover Effects for Loaded Content */
+.animate-scale-in:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-out;
+}
+
+/* Smooth transitions for all animated elements */
+.animate-fade-in,
+.animate-slide-up,
+.animate-scale-in,
+.animate-bounce-in,
+.animate-slide-in-left,
+.animate-stagger {
+  will-change: transform, opacity;
+}
+
+/* Modal transition states */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.85) translateY(10px);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: scale(0.5) translateY(10px);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 1, 1), 
+              transform 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* Volume Slider Keyframes */
+@keyframes volume-slider-expand {
+  from {
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    width: 80px;
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes volume-slider-collapse {
+  from {
+    width: 80px;
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  to {
+    width: 0;
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+/* Volume Slider Animation */
+.volume-slider-show {
+  animation: volume-slider-expand 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: left center;
+}
+
+.volume-slider-hide {
+  animation: volume-slider-collapse 0.3s cubic-bezier(0.4, 0, 1, 1) forwards;
+  transform-origin: left center;
+}
+
+/* Volume Slider Transition */
+.volume-slider-transition {
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: left center;
+  overflow: hidden;
+}
+
+.volume-slider-visible {
+  width: 80px;
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.volume-slider-hidden {
+  width: 0;
+  opacity: 0;
+  transform: scaleX(0);
+}

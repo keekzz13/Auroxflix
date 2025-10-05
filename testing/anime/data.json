@@ -1,0 +1,527 @@
+{
+  "adultContent": false,
+  "data_id": "18154",
+  "id": "my-hero-academia-season-6-18154",
+  "anilistId": "139630",
+  "malId": "49918",
+  "title": "My Hero Academia Season 6",
+  "japanese_title": "Boku no Hero Academia 6th Season",
+  "synonyms": "My Hero Academia 6",
+  "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/20b7580c1abdf45a6eaf4826fc9fdf33.jpg",
+  "backdrop_image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/139630-XLc90c6CJjZv.jpg",
+  "showType": "TV",
+  "animeInfo": {
+    "Overview": "With Tomura Shigaraki at its helm, the former Liberation Army is now known as the Paranormal Liberation Front. This organized criminal group poses an immense threat to the Hero Association, not only because of its sheer size and strength, but also the overpowering quirks of Jin \"Twice\" Bubaigawara and Gigantomachia.\r\n\r\nAs new intel from the covert hero Keigo \"Hawks\" Takami confirms that Shigaraki is nowhere to be seen, the Hero Association decides to strike the enemy headquarters with a surprise attack using the entirety of its assets\u2014and the UA students find themselves on the battlefield once again. As the fight rages on, the unsuspecting villains must regroup and push back, but the brave heroes are determined to eradicate every last one of them.",
+    "Japanese": "\u50d5\u306e\u30d2\u30fc\u30ed\u30fc\u30a2\u30ab\u30c7\u30df\u30a2-6th-Season",
+    "Synonyms": "My-Hero-Academia-6",
+    "Aired": "Oct-1,-2022-to-Mar-25,-2023",
+    "Premiered": "Fall-2022",
+    "Duration": "24m",
+    "Status": "Finished-Airing",
+    "MAL Score": "8.42",
+    "Genres": [
+      "Action",
+      "School",
+      "Shounen",
+      "Super-Power"
+    ],
+    "Studios": "Bones",
+    "Producers": [
+      "Shueisha",
+      "TOHO-animation",
+      "Dentsu"
+    ],
+    "tvInfo": {
+      "rating": "PG-13",
+      "quality": "HD",
+      "sub": "25",
+      "dub": "25",
+      "showType": "TV",
+      "duration": "24m"
+    }
+  },
+  "seasons": [
+    {
+      "name": "Season 1",
+      "route": "/my-hero-academia-322",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/d1ae1f3d3324e24dfdfa64e4c2e687f8.jpg"
+    },
+    {
+      "name": "Season 2",
+      "route": "/my-hero-academia-2-131",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/8cf943f264358d31e264ff459fcf50f8.jpg"
+    },
+    {
+      "name": "SP-1",
+      "route": "/my-hero-academia-season-2-hero-notebook-2208",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/b177b43918f62c28b19514538bd7b4d6.jpg"
+    },
+    {
+      "name": "Movie-1",
+      "route": "/my-hero-academia-movie-1-two-heroes-841",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/9e258e5b3460f9a5a9db167a0603965a.jpg"
+    },
+    {
+      "name": "Season 3",
+      "route": "/my-hero-academia-3-189",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/9e1115ba906366b39cc7483de68dbbb0.jpg"
+    },
+    {
+      "name": "Movie-2",
+      "route": "/my-hero-academia-the-movie-2-heroes-rising-383",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/dbfa193d8d6d2a68b9f4b9710cd0c5c8.jpg"
+    },
+    {
+      "name": "Season 4",
+      "route": "/my-hero-academia-4-365",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/a727d8e34cba9a4bb8f151397533e662.jpg"
+    },
+    {
+      "name": "SP-2",
+      "route": "/my-hero-academia-make-it-do-or-die-survival-training-3432",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/22f07a9b643cdd601666c518fd59eec9.jpg"
+    },
+    {
+      "name": "Season 5",
+      "route": "/my-hero-academia-5th-season-15666",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/463d27f4c66bc7763a0fcfc952df2299.jpg"
+    },
+    {
+      "name": "Movie-3",
+      "route": "/my-hero-academia-the-movie-3-world-heroes-mission-17334",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/370d705e46efcfac81c0f7a7fb54a3be.jpg"
+    },
+    {
+      "name": "Season 6",
+      "route": "/my-hero-academia-season-6-18154",
+      "background": "https://cdn.noitatnemucod.net/thumbnail/100x200/100/20b7580c1abdf45a6eaf4826fc9fdf33.jpg"
+    }
+  ],
+  "recommended_data": [
+    {
+      "data_id": "18598",
+      "id": "arknights-perish-in-frost-18598",
+      "title": "Arknights: Perish in Frost",
+      "japanese_title": "Arknights: Fuyukomori Kaerimichi",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/77a3500e993c85189f493eb2302729a7.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "8",
+        "eps": "8"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18599",
+      "id": "shy-18599",
+      "title": "Shy",
+      "japanese_title": "Shy",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/2c1c86e4812d19a10ef8621fa071577b.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12",
+        "dub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18600",
+      "id": "a-returners-magic-should-be-special-18600",
+      "title": "A Returner's Magic Should Be Special",
+      "japanese_title": "Kikansha no Mahou wa Tokubetsu desu",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f77c2a8d9163d22b4c8c5376189c56c1.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "23m",
+        "sub": "12",
+        "dub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18602",
+      "id": "kamierabi-godapp-18602",
+      "title": "KamiErabi GOD.app",
+      "japanese_title": "Kamierabi",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/0aae292d628cd9dbd4cc54df0d7975f8.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "22m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18604",
+      "id": "a-playthrough-of-a-certain-dudes-vrmmo-life-18604",
+      "title": "A Playthrough of a Certain Dude's VRMMO Life",
+      "japanese_title": "Toaru Ossan no VRMMO Katsudouki",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/0bb84fd8a5471116057fb9b8335883e8.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18612",
+      "id": "hypnosismic-division-rap-battle-rhyme-anima-plus-18612",
+      "title": "HYPNOSISMIC -Division Rap Battle- Rhyme Anima PLUS",
+      "japanese_title": "Hypnosis Mic: Division Rap Battle - Rhyme Anima +",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/d0a9d0ea71b460c7c0e141906ca04619.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12"
+      },
+      "adultContent": true
+    },
+    {
+      "data_id": "18613",
+      "id": "bullbuster-18613",
+      "title": "Bullbuster",
+      "japanese_title": "Bullbuster",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/e081c2760ebabbb28299e33bc452fee8.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18614",
+      "id": "kibou-no-chikara-otona-precure-23-18614",
+      "title": "Kibou no Chikara: Otona Precure '23",
+      "japanese_title": "Kibou no Chikara: Otona Precure '23",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/451f09be03718f2bb0ce7f730613581c.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "25m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18605",
+      "id": "protocol-rain-18605",
+      "title": "Protocol: Rain",
+      "japanese_title": "Bokura no Ameiro Protocol",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/62092bdec7530c0df717e0abaa09d74a.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "23m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18606",
+      "id": "the-yuzuki-familys-four-sons-18606",
+      "title": "The Yuzuki Family's Four Sons",
+      "japanese_title": "Yuzuki-san Chi no Yonkyoudai.",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/a08755c9e8d98571d79de3a75ca95e0d.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18616",
+      "id": "kawagoe-boys-sing-18616",
+      "title": "Kawagoe Boys Sing",
+      "japanese_title": "Kawagoe Boys Sing",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b2ddce1435ce4c676b80b91f2f5d6c2b.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "23m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18617",
+      "id": "kizuna-no-allele-season-2-18617",
+      "title": "Kizuna no Allele Season 2",
+      "japanese_title": "Kizuna no Allele Season 2",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/81bd506948e81a76de04b2191a14180f.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18622",
+      "id": "heaven-officials-blessing-season-2-18622",
+      "title": "Heaven Official's Blessing Season 2",
+      "japanese_title": "Tian Guan Cifu Er",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/ca4a985aeb767ff09df03439800d8260.jpg",
+      "tvInfo": {
+        "showType": "ONA",
+        "duration": "24m",
+        "sub": "12",
+        "dub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18623",
+      "id": "good-night-world-18623",
+      "title": "Good Night World",
+      "japanese_title": "Good Night World",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/09f07b5b13fb0cfe9f36aa1340bc911d.jpg",
+      "tvInfo": {
+        "showType": "ONA",
+        "duration": "24m",
+        "sub": "12",
+        "dub": "12",
+        "eps": "12"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18624",
+      "id": "onimusha-18624",
+      "title": "Onimusha",
+      "japanese_title": "Onimusha",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/e39b0add0f8bfa10d09e788f2637e31d.jpg",
+      "tvInfo": {
+        "showType": "ONA",
+        "duration": "28m",
+        "sub": "8",
+        "dub": "8",
+        "eps": "8"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18625",
+      "id": "gundam-build-metaverse-18625",
+      "title": "Gundam Build Metaverse",
+      "japanese_title": "Gundam Build Metaverse",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/1e40953251089968cf6d101d7223f2ee.jpg",
+      "tvInfo": {
+        "showType": "ONA",
+        "duration": "24m",
+        "sub": "3",
+        "eps": "3"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18627",
+      "id": "tokyo-revengers-tenjiku-hen-uncensored-18627",
+      "title": "Tokyo Revengers: Tenjiku-hen [Uncensored]",
+      "japanese_title": "Tokyo Revengers: Tenjiku-hen [Uncensored]",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/896483d9436d29a61443d35bdd00acff.jpg",
+      "tvInfo": {
+        "showType": "TV",
+        "duration": "24m",
+        "sub": "13",
+        "eps": "13"
+      },
+      "adultContent": true
+    },
+    {
+      "data_id": "18629",
+      "id": "my-hero-academia-ua-heroes-battle-18629",
+      "title": "My Hero Academia: UA Heroes Battle",
+      "japanese_title": "Boku no Hero Academia: UA Heroes Battle",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/37f9348bd0d3dfc158225e4176d3587b.jpg",
+      "tvInfo": {
+        "showType": "Movie",
+        "duration": "23m",
+        "sub": "1",
+        "dub": "1"
+      },
+      "adultContent": false
+    }
+  ],
+  "related_data": [
+    {
+      "data_id": "15666",
+      "id": "my-hero-academia-5th-season-15666",
+      "title": "My Hero Academia 5th Season",
+      "japanese_title": "Boku no Hero Academia 5th Season",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/463d27f4c66bc7763a0fcfc952df2299.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "25",
+        "dub": "25",
+        "eps": "25"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18136",
+      "id": "my-hero-academia-ona-18136",
+      "title": "My Hero Academia ONA",
+      "japanese_title": "Boku no Hero Academia (ONA)",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/dd05c8c5b679ade2100781114e974160.jpg",
+      "tvInfo": {
+        "showType": "ona",
+        "sub": "2",
+        "dub": "2",
+        "eps": "2"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "100",
+      "id": "one-piece-100",
+      "title": "One Piece",
+      "japanese_title": "One Piece",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bcd84731a3eda4f4a306250769675065.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "1128",
+        "dub": "1122"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "355",
+      "id": "naruto-shippuden-355",
+      "title": "Naruto: Shippuden",
+      "japanese_title": "Naruto: Shippuuden",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/9cbcf87f54194742e7686119089478f8.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "500",
+        "dub": "500",
+        "eps": "500"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "806",
+      "id": "bleach-806",
+      "title": "Bleach",
+      "japanese_title": "Bleach",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/bd5ae1d387a59c5abcf5e1a6a616728c.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "366",
+        "dub": "366",
+        "eps": "366"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "19413",
+      "id": "solo-leveling-season-2-arise-from-the-shadow-19413",
+      "title": "Solo Leveling Season 2: Arise from the Shadow",
+      "japanese_title": "Ore dake Level Up na Ken Season 2: Arise from the Shadow",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/65f92e6e315a931ef872da4b312442b8.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "13",
+        "dub": "13",
+        "eps": "13"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "2404",
+      "id": "black-clover-2404",
+      "title": "Black Clover",
+      "japanese_title": "Black Clover",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/f58b0204c20ae3310f65ae7b8cb9987e.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "170",
+        "dub": "170",
+        "eps": "170"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18413",
+      "id": "jujutsu-kaisen-2nd-season-18413",
+      "title": "Jujutsu Kaisen 2nd Season",
+      "japanese_title": "Jujutsu Kaisen 2nd Season",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/b51f863b05f30576cf9d85fa9b911bb5.png",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "23",
+        "dub": "23",
+        "eps": "23"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "8143",
+      "id": "boruto-naruto-next-generations-8143",
+      "title": "Boruto: Naruto Next Generations",
+      "japanese_title": "Boruto: Naruto Next Generations",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/32c83e2ad4a43229996356840db3982c.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "293",
+        "dub": "293",
+        "eps": "293"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "18056",
+      "id": "demon-slayer-kimetsu-no-yaiba-swordsmith-village-arc-18056",
+      "title": "Demon Slayer: Kimetsu no Yaiba Swordsmith Village Arc",
+      "japanese_title": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/db2f3ce7b9cab7fdc160b005bffb899a.png",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "11",
+        "dub": "11",
+        "eps": "11"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "677",
+      "id": "naruto-677",
+      "title": "Naruto",
+      "japanese_title": "Naruto",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/5db400c33f7494bc8ae96f9e634958d0.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "220",
+        "dub": "220",
+        "eps": "220"
+      },
+      "adultContent": false
+    },
+    {
+      "data_id": "534",
+      "id": "jujutsu-kaisen-tv-534",
+      "title": "Jujutsu Kaisen (TV)",
+      "japanese_title": "Jujutsu Kaisen (TV)",
+      "poster": "https://cdn.noitatnemucod.net/thumbnail/300x400/100/82402f796b7d84d7071ab1e03ff7747a.jpg",
+      "tvInfo": {
+        "showType": "tv",
+        "sub": "24",
+        "dub": "24",
+        "eps": "24"
+      },
+      "adultContent": false
+    }
+  ]
+}

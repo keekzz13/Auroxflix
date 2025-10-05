@@ -1,0 +1,11 @@
+animeid = 18853
+episodeid = 114826
+
+episode list
+https://9animetv.to/ajax/episode/list/18853
+
+servers for episode
+https://9animetv.to/ajax/episode/servers?episodeId=114826
+
+get source
+https://9animetv.to/ajax/episode/sources?id=1080532

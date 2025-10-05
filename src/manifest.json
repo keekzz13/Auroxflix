@@ -1,0 +1,15 @@
+{
+    "name": "NepoFlix",
+    "short_name": "NepoFlix",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#00050d",
+    "theme_color": "#2392EE",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      }
+    ]
+  }
