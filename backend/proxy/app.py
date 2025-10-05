@@ -7,7 +7,7 @@ import cloudscraper
 import re
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "http://localhost:5174", "https://quickwatch.co", "http://192.168.1.8:5173"]}})
+CORS(app, resources={r"/*": {"origins": ["https://auroxflix.netlify.app", "http://localhost:5174", "https://quickwatch.co", "http://192.168.1.8:5173"]}})
 
 session = requests.Session()
 retry_strategy = Retry(
