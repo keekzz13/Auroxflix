@@ -1,0 +1,158 @@
+- .env
+- .gitignore
+- Dockerfile
+- LICENSE
+- README.md
+- api
+  - m3u8proxy.ts
+  - proxy.ts
+- backend
+  - m3u8proxy
+    - .gitignore
+    - Dockerfile
+    - dist
+      - index.d.ts
+      - index.html
+      - index.js
+      - libraries
+        - server.d.ts
+        - server.js
+      - tsconfig.tsbuildinfo
+    - package-lock.json
+    - package.json
+    - src
+      - index.html
+      - index.ts
+      - libraries
+        - server.ts
+    - tsconfig.json
+  - proxy
+    - Dockerfile
+    - app.py
+- components.json
+- eslint.config.js
+- index.html
+- jsconfig.json
+- package-lock.json
+- package.json
+- project_structure.text
+- public
+  - icons
+    - back10.svg
+    - forwards10.svg
+  - logo.png
+  - logow.png
+  - robots.txt
+  - sitemap.xml
+- robots.txt
+- sitemap.xml
+- src
+  - components
+    - Footer.jsx
+    - Header.jsx
+    - QuickSearch.jsx
+    - Skeletons.jsx
+    - anime
+      - animeData.jsx
+      - animeDetailsData.jsx
+      - episodeThumbnails.jsx
+      - search.jsx
+      - spotlightData.jsx
+      - ui
+        - animeDetailsModal.jsx
+        - card.jsx
+        - header.jsx
+    - carouselItem.jsx
+    - downloadSection.jsx
+    - downloadUtils.jsx
+    - downloaders
+      - showbox.jsx
+      - vegamovies.jsx
+    - enhanced-carousel.jsx
+    - player
+      - helpers.jsx
+      - main.jsx
+      - settings.jsx
+      - sources.jsx
+      - subtitles.jsx
+      - template.jsx
+    - progress
+      - index.jsx
+      - progressManager.jsx
+      - sourceTrackers.jsx
+    - ui
+      - dropdown-menu.jsx
+  - config.json
+  - lib
+    - utils.js
+  - logo.png
+  - main.jsx
+  - manifest.json
+  - pages
+    - 404.jsx
+    - Search.jsx
+    - Watchlist.jsx
+    - anime
+      - details.jsx
+      - home.jsx
+      - search.jsx
+      - sources.jsx
+    - auth
+      - Login.jsx
+      - Signup.jsx
+    - browse
+      - ContinueWatching.jsx
+      - Filter.jsx
+      - Home.jsx
+      - Movies.jsx
+      - Tv.jsx
+    - details
+      - Cards.jsx
+      - CastDetails.jsx
+      - Details.jsx
+      - MobileOrientationPrompt.jsx
+      - Sources.jsx
+      - Watch.jsx
+    - embeds
+      - xprime.jsx
+      - zenime.jsx
+    - misc
+      - Ios.jsx
+  - router.jsx
+  - store
+    - filterStore.js
+    - homeStore.js
+    - moviesStore.js
+    - searchStore.js
+    - tvStore.js
+    - watchlistStore.js
+  - styles
+    - animations.css
+    - index.css
+  - supabaseClient.js
+  - utils.jsx
+- testing
+  - 9anime.txt
+  - anime
+    - data.json
+    - episodes.py
+    - get_anime_data.py
+    - search.py
+  - flix
+    - flixhq.py
+    - myflixerz.py
+  - notworking
+    - superembed.py
+    - vidfast❌.py
+    - vidlink❌.py
+    - vidsrcCC.py
+    - vidsrcsu❌.py
+  - uniquestream.py
+  - vegamovies.py
+  - xprime
+    - fox.py
+    - primebox_movie.py
+    - primebox_tv.py
+- todo
+- vercel.json
+- vite.config.js
