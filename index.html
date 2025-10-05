@@ -6,44 +6,49 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="NepoFlix" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-title" content="Auroxflix" />
+    <meta name="theme-color" content="#2392EE" />
 
     <!-- SEO Meta Tags -->
-    <title>NepoFlix - Watch Movies, TV Shows & Anime Online</title>
-    <meta name="description" content="Watch your favorite movies, TV shows, and anime online for free. NepoFlix lets you stream and download using multiple sources." />
-    <meta name="keywords" content="movies, TV shows, anime, streaming, download movies, NepoFlix, free online streaming" />
+    <title>Auroxflix - Watch Movies, TV Shows & Anime Online</title>
+    <meta name="description" content="Watch your favorite movies, TV shows, and anime online for free. Auroxflix lets you stream and download using multiple sources." />
+    <meta name="keywords" content="movies, TV shows, anime, streaming, download movies, Auroxflix, free online streaming" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Social Sharing -->
-    <meta property="og:title" content="NepoFlix - Movies & Anime Online" />
+    <meta property="og:title" content="Auroxflix - Movies & Anime Online" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="A reliable free online streaming platform to watch and download movies using multiple sources." />
-    <meta property="og:url" content="https://nepoflix.vercel.app" />
-    <meta property="og:image" content="https://nepoflix.vercel.app/src/logo.png" />
+    <meta property="og:url" content="https://auroxflix.vercel.app" />
+    <meta property="og:image" content="https://auroxflix.vercel.app/public/auroxflix-logo.svg" />
     <meta property="og:color" content="#2392EE" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NepoFlix - Movies & Anime Online" />
+    <meta name="twitter:title" content="Auroxflix - Movies & Anime Online" />
     <meta name="twitter:description" content="Watch your favorite movies, TV shows, and anime online for free." />
-    <meta name="twitter:image" content="https://nepoflix.vercel.app/src/logo.png" />
+    <meta name="twitter:image" content="https://auroxflix.vercel.app/public/auroxflix-logo.svg" />
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="5UoyeDcaxG88_TayL6E1-OK4z7Xxp6OuOVzjrlr79TA" />
-
-    <!-- Favicon & App Icons -->
-    <link rel="shortcut icon" href="/src/logo.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/src/logo.png" />
-    <link rel="apple-touch-startup-image" href="/src/logo.png" />
-    <link rel="manifest" href="src/manifest.json">
-
-    <!-- Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="5bc2bb09-f397-45b5-8e69-d5e7fc95a24d"></script>
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 0.8s cubic-bezier(0.42, 0, 0.58, 1) 0.1s forwards;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
-  <body class="bg-[#090a0a]">
+  <body>
+    <div class="fade-in" style="text-align:center;margin-top:40px;">
+      <img src="public/auroxflix-logo.svg" alt="Auroxflix Logo" width="140" height="140">
+      <h1 style="font-family:Montserrat,sans-serif;font-weight:700;font-size:2.5rem;color:#2392EE;margin-top:10px;">Auroxflix</h1>
+      <p style="font-size:1.2rem;color:#444;">Your ultimate destination for free movies, TV shows, and anime — stream everything you love, all in one place.</p>
+    </div>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
   </body>
 </html>
