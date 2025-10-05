@@ -2,25 +2,26 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<a href="https://github.com/Sandipeyy/NepoFlix">
-  <img src="public/logo.png" alt="NepoFlix Logo" width="100" height="100">
+<a href="https://github.com/kaizenrdebug/Auroxflix">
+  <img src="public/auroxflix-logo.svg" alt="Auroxflix Logo" width="100" height="100">
 </a>
 
-# **NepoFlix**
+# **Auroxflix**
+
 **🎬 All your entertainment. One platform. Free forever.**  
 
-[![GitHub Stars](https://img.shields.io/github/stars/Sandipeyy/NepoFlix?color=%23A855F7&logo=github&style=for-the-badge)](https://github.com/Sandipeyy/NepoFlix/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/kaizenrdebug/Auroxflix?color=%23A855F7&logo=github&style=for-the-badge)](https://github.com/kaizenrdebug/Auroxflix/stargazers)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
 ---
 
 ## 📖 About
 
-> **NepoFlix** is your go-to platform for movies, TV shows, and anime — anytime, anywhere.  
+> **Auroxflix** is your go-to platform for movies, TV shows, and anime — anytime, anywhere.  
 > Enjoy fast streaming, a mobile-friendly interface, and multiple backup sources — **no sign-ups, no subscriptions, no hassle.**
 
-🌐 **[Visit Website](https://nepoflix.vercel.app/)**  
-📧 **[Contact Us](mailto:nepoflix.contact@gmail.com)**
+🌐 **[Visit Website](https://auroxflix.vercel.app/)**  
+📧 **[Contact Us](mailto:aivanleigh25@gmail.com)**
 
 ---
 
@@ -44,7 +45,7 @@
 
 ## 🌐 Alternative Domains
 If the main domain is unavailable, visit:  
-➡️ **[NepoFlix Domain List](https://sandipeyy.github.io/NepoFlix-Domains/)**
+➡️ **[Auroxflix Domain List](https://kaizenrdebug.github.io/Auroxflix-Domains/)**
 
 ---
 
@@ -58,10 +59,10 @@ We welcome all contributions!
 
 ## 🙏 Credits
 
-NepoFlix is based on **[QuickWatch](quickwatch.co )**,  
-originally created by **[@varunaditya-plus](https://github.com/varunaditya-plus)** and licensed under the **GNU General Public License (GPL)**.  
+Auroxflix is based on **[QuickWatch](https://quickwatch.co )**,  
+originally created by **[@varunaditya-plus](https://github.com/varunaditya-plus)** and licensed under the **GNU GPL**.  
 
-We thank the QuickWatch project for providing the foundation that made NepoFlix possible.
+We thank the QuickWatch project for providing the foundation that made Auroxflix possible.
 
 ---
 
@@ -80,11 +81,11 @@ You are free to use, modify, and share it — but you **must** also give credit 
 ---
 
 ## ⭐ Star History
-<a href="https://star-history.com/#Sandipeyy/NepoFlix&Timeline">
+<a href="https://star-history.com/#kaizenrdebug/Auroxflix&Timeline">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Sandipeyy/NepoFlix&type=Timeline&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Sandipeyy/NepoFlix&type=Timeline" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Sandipeyy/NepoFlix&type=Timeline" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kaizenrdebug/Auroxflix&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kaizenrdebug/Auroxflix&type=Timeline" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kaizenrdebug/Auroxflix&type=Timeline" />
   </picture>
 </a>
 
@@ -93,14 +94,14 @@ You are free to use, modify, and share it — but you **must** also give credit 
 ## 👥 Contributors
 Thanks to these amazing people for helping make this project better!  
 
-<a href="https://github.com/Sandipeyy/NepoFlix/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Sandipeyy/NepoFlix" alt="All Contributors" />
+<a href="https://github.com/kaizenrdebug/Auroxflix/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kaizenrdebug/Auroxflix" alt="All Contributors" />
 </a>
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/Sandipeyy">Sandipeyy</a> • <a href="mailto:nepoflix.contact@gmail.com">nepoflix.contact@gmail.com</a>
+  Made with ❤️ by <a href="https://github.com/kaizenrdebug">kaizenrdebug</a> • <a href="mailto:aivanleigh25@gmail.com">aivanleigh25@gmail.com</a>
 </p>
 
 </div>
