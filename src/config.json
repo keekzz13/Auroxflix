@@ -1,7 +1,7 @@
 {
-    "proxy": "/proxy",
-    "m3u8proxy": "/m3u8proxy",
-    "tmdbApiKey": "6452370c23b5a8497b9a201cf46fba42",
-    "tmdbBaseUrl": "https://api.themoviedb.org/3",
-    "tmdbImageBaseUrl": "https://image.tmdb.org/t/p/"
+"proxy": "/proxy",
+"m3u8proxy": "/m3u8proxy",
+"tmdbApiKey": null,
+"tmdbBaseUrl": "https://auroxflix-1.onrender.com/proxy/tmdb",
+"tmdbImageBaseUrl": "https://image.tmdb.org/t/p/"
 }
