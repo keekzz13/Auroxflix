@@ -8,8 +8,7 @@ export const makeAPICall = async (endpoint, options = {}) => {
   }
 
   const queryParams = new URLSearchParams({
-    api_key: apiKey,
-    ...options.params,
+    ...options.params // Let backend handle api_key
   }).toString();
 
   const url = `${apiConfig.tmdbBaseUrl}${endpoint}${queryParams ? `?${queryParams}` : ''}`;
@@ -32,14 +31,14 @@ export const makeAPICall = async (endpoint, options = {}) => {
         status: response.status,
         statusText: response.statusText,
         contentType,
-        response: errorText.slice(0, 100)
+        response: errorText.slice(0, 200)
       });
       throw new Error(`TMDB fetch failed: ${response.status} ${response.statusText}`);
     }
 
     if (!contentType.includes('application/json')) {
       const errorText = await response.text();
-      console.error('Non-JSON Response:', { contentType, response: errorText.slice(0, 100) });
+      console.error('Non-JSON Response:', { contentType, response: errorText.slice(0, 200) });
       throw new Error('Expected JSON, received non-JSON response');
     }
 
