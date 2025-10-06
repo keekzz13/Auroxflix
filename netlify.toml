@@ -16,7 +16,7 @@
 
 [[redirects]]
   from = "/m3u8proxy/*"
-  to = "https://m3u8-proxy-aant.onrender.com//:splat"
+  to = "https://m3u8-proxy-aant.onrender.com/:splat"
   status = 200
   force = true
 
