@@ -37,6 +37,7 @@ def proxy():
             return jsonify({'error': 'Only GET and POST methods are allowed'}), 400
 
         timeout = data.get('timeout', 30)
+        print(f"POST /proxy: url={url}, method={method}, cf={use_cloudscraper}")
 
         if use_cloudscraper:
             scraper = cloudscraper.CloudScraper()
@@ -53,6 +54,8 @@ def proxy():
                 response = session.post(url, headers=headers, data=form_data, timeout=timeout, stream=True)
 
         response.raise_for_status()
+        content_type = response.headers.get('content-type', '')
+        print(f"POST /proxy Response: status={response.status_code}, content-type={content_type}")
         return Response(response.content, status=response.status_code, headers=dict(response.headers))
 
     except Exception as e:
@@ -62,24 +65,24 @@ def proxy():
 # TMDB-specific route (GET)
 @app.route('/proxy/tmdb/<path:subpath>', methods=['GET'])
 def proxy_tmdb(subpath):
-    print(f"Received TMDB request: /proxy/tmdb/{subpath}")  # Debug log
+    print(f"Received TMDB request: /proxy/tmdb/{subpath}")
     api_key = os.environ.get('TMDB_API_KEY', '6452370c23b5a8497b9a201cf46fba42')
     tmdb_url = f"https://api.themoviedb.org/3/{subpath}"
     params = {**request.args, 'api_key': api_key}
-    print(f"Forwarding to TMDB: {tmdb_url} with params: {params}")  # Debug log
+    print(f"Forwarding to TMDB: {tmdb_url} with params: {params}")
     try:
         response = session.get(tmdb_url, params=params, timeout=30)
         response.raise_for_status()
         content_type = response.headers.get('content-type', '')
-        print(f"TMDB Response: status={response.status_code}, content-type={content_type}")  # Debug log
+        print(f"TMDB Response: status={response.status_code}, content-type={content_type}")
         if 'application/json' in content_type:
             return jsonify(response.json()), response.status_code
         else:
             print(f"Unexpected TMDB Response: {response.text[:100]}")
-            return Response(response.text, status=response.status_code, headers=dict(response.headers))
+            return jsonify({'error': 'Unexpected non-JSON response from TMDB', 'content': response.text[:100]}), 500
     except requests.RequestException as e:
-        print(f"TMDB Proxy Error: {str(e)}")
-        return jsonify({'error': str(e)}), 500
+        print(f"TMDB Proxy Error: {str(e)}, Response: {e.response.text[:100] if e.response else 'No response'}")
+        return jsonify({'error': str(e), 'response': e.response.text[:100] if e.response else 'No response'}), 500
 
 # Health check route
 @app.route('/health', methods=['GET'])
