@@ -4,3 +4,4 @@ requests==2.26.0
 gunicorn==20.1.0
 cloudscraper==1.2.71
 urllib3==1.26.20
+werkzeug==2.0.3  # Pin to compatible version
