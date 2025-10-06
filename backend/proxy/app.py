@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 import requests
@@ -8,7 +7,7 @@ import cloudscraper
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["https://auroxflix.netlify.app/", "http://localhost:5173"]}})
+CORS(app, resources={r"/*": {"origins": ["https://auroxflix.netlify.app", "http://localhost:5173"]}})
 
 # Regular requests session with retry strategy
 session = requests.Session()
@@ -22,6 +21,7 @@ adapter = HTTPAdapter(max_retries=retry_strategy, pool_connections=10, pool_maxs
 session.mount("http://", adapter)
 session.mount("https://", adapter)
 
+# Existing generic proxy route
 @app.route('/', methods=['POST'])
 def proxy():
     try:
@@ -38,7 +38,6 @@ def proxy():
 
         timeout = data.get('timeout', 30)
 
-        # Choose session based on cf parameter
         if use_cloudscraper:
             scraper = cloudscraper.CloudScraper()
             if method == 'GET':
@@ -60,7 +59,16 @@ def proxy():
         print(f"Error: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
 
-if __name__ == '__main__':
-    app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-    port = int(os.environ.get('PORT', 10000))
-    app.run(debug=False, host='0.0.0.0', port=port, threaded=True)
+# New TMDB-specific route for GET requests
+@app.route('/proxy/tmdb/<path:subpath>', methods=['GET'])
+def proxy_tmdb(subpath):
+    api_key = os.environ.get('TMDB_API_KEY', '6452370c23b5a8497b9a201cf46fba42')
+    tmdb_url = f"https://api.themoviedb.org/3/{subpath}"
+    params = {**request.args, 'api_key': api_key}
+    try:
+        response = session.get(tmdb_url, params=params, timeout=30)
+        response.raise_for_status()
+        return jsonify(response.json()), response.status_code
+    except requests.RequestException as e:
+        print(f"TMDB Proxy Error: {str(e)}")
+        return jsonify({'error': str(e)}), 500
