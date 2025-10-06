@@ -21,7 +21,7 @@ adapter = HTTPAdapter(max_retries=retry_strategy, pool_connections=10, pool_maxs
 session.mount("http://", adapter)
 session.mount("https://", adapter)
 
-# Existing generic proxy route
+# Generic proxy route (POST)
 @app.route('/', methods=['POST'])
 def proxy():
     try:
@@ -56,19 +56,38 @@ def proxy():
         return Response(response.content, status=response.status_code, headers=dict(response.headers))
 
     except Exception as e:
-        print(f"Error: {str(e)}")
+        print(f"Error in /proxy: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred.'}), 500
 
-# New TMDB-specific route for GET requests
+# TMDB-specific route (GET)
 @app.route('/proxy/tmdb/<path:subpath>', methods=['GET'])
 def proxy_tmdb(subpath):
+    print(f"Received TMDB request: /proxy/tmdb/{subpath}")  # Debug log
     api_key = os.environ.get('TMDB_API_KEY', '6452370c23b5a8497b9a201cf46fba42')
     tmdb_url = f"https://api.themoviedb.org/3/{subpath}"
     params = {**request.args, 'api_key': api_key}
+    print(f"Forwarding to TMDB: {tmdb_url} with params: {params}")  # Debug log
     try:
         response = session.get(tmdb_url, params=params, timeout=30)
         response.raise_for_status()
-        return jsonify(response.json()), response.status_code
+        content_type = response.headers.get('content-type', '')
+        print(f"TMDB Response: status={response.status_code}, content-type={content_type}")  # Debug log
+        if 'application/json' in content_type:
+            return jsonify(response.json()), response.status_code
+        else:
+            print(f"Unexpected TMDB Response: {response.text[:100]}")
+            return Response(response.text, status=response.status_code, headers=dict(response.headers))
     except requests.RequestException as e:
         print(f"TMDB Proxy Error: {str(e)}")
         return jsonify({'error': str(e)}), 500
+
+# Health check route
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'healthy'}), 200
+
+if __name__ == '__main__':
+    app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+    port = int(os.environ.get('PORT', 10000))
+    print(f"Starting Flask on port {port}")
+    app.run(debug=False, host='0.0.0.0', port=port, threaded=True)
