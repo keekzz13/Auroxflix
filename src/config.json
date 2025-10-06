@@ -1,7 +1,7 @@
 {
-"proxy": "/proxy",
-"m3u8proxy": "/m3u8proxy",
-"tmdbApiKey": null,
-"tmdbBaseUrl": "https://auroxflix-1.onrender.com/proxy/tmdb",
-"tmdbImageBaseUrl": "https://image.tmdb.org/t/p/"
+    "proxy": "/proxy",
+    "m3u8proxy": "/m3u8proxy",
+    "tmdbApiKey": null,
+    "tmdbBaseUrl": "/proxy/tmdb",
+    "tmdbImageBaseUrl": "https://image.tmdb.org/t/p/"
 }
