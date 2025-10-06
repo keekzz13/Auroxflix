@@ -1,8 +1,28 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  base = "/"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://auroxflix-1.onrender.com/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/m3u8proxy/*"
+  to = "https://m3u8-proxy-aant.onrender.com//:splat"
+  status = 200
+  force = true
+
+[build.environment]
+  VITE_PROXY_URL = "https://auroxflix-1.onrender.com/"
+  VITE_M3U8_PROXY_URL = "https://m3u8-proxy-aant.onrender.com/"
+  VITE_TMDB_API_KEY = "6452370c23b5a8497b9a201cf46fba42"
+  VITE_SUPABASE_URL = "https://opnnfhfbkgoavfcuwbsf.supabase.co"
+  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9wbm5maGZia2dvYXZmY3V3YnNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MjUxNzQsImV4cCI6MjA3NTMwMTE3NH0.Cq8n_hvyxmEMTWRkHCQUjNiZjm6laaCqQmHUi0pXnWg"
