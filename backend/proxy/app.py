@@ -8,9 +8,7 @@ import cloudscraper
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": [
-    "https://auroxflix.netlify.app"
-]}})
+CORS(app, resources={r"/*": {"origins": ["https://auroxflix.netlify.app/", "http://localhost:5173"]}})
 
 # Regular requests session with retry strategy
 session = requests.Session()
