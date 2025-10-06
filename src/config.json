@@ -1,5 +1,7 @@
-export const config = {
-  tmdbApiKey: import.meta.env.VITE_TMDB_API_KEY,
-  tmdbBaseUrl: 'https://api.themoviedb.org/3',
-  tmdbImageBaseUrl: 'https://image.tmdb.org/t/p/'
-};
+{
+    "proxy": "/proxy",
+    "m3u8proxy": "/m3u8proxy",
+    "tmdbApiKey": "6452370c23b5a8497b9a201cf46fba42",
+    "tmdbBaseUrl": "https://api.themoviedb.org/3",
+    "tmdbImageBaseUrl": "https://image.tmdb.org/t/p/"
+}
