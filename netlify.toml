@@ -3,12 +3,6 @@
   publish = "dist"
 
 [[redirects]]
-  from = "/proxy/*"
-  to = "https://your-render-backend-proxy-url/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
-  force = true
-[[redirects]]
-  from = "/m3u8proxy/*"
-  to = "https://your-render-m3u8-proxy-url/:splat"
-  status = 200
-  force = true
